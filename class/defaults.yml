@@ -54,7 +54,7 @@ parameters:
         tag: v0.3.0
       appcat:
         registry: ghcr.io
-        repository: vshn/appcat
+        repository: kidswiss/appcat
         tag: v4.92.0
       functionAppcat:
         registry: ${appcat:images:appcat:registry}

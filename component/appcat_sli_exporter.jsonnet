@@ -71,10 +71,10 @@ local kustomization =
   if params.slos.enabled then
     local image = params.images.appcat;
     com.Kustomization(
-      'https://github.com/vshn/appcat/config/sliexporter/default',
+      'https://github.com/kidswiss/appcat/config/sliexporter/default',
       image.tag,
       {
-        'ghcr.io/vshn/appcat': {
+        'ghcr.io/kidswiss/appcat': {
           newTag: common.GetAppCatImageTag(),
           newName: '%(registry)s/%(repository)s' % image,
         },
